@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>    
+<head>
+<title> Flight Ticket booking App</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+
+</head>
+<body>
+<form name="form" method="post" action="html" target="_blank" onsubmit="return f1(),f2(),f3(),f4(),f5()">
+<div class="container">
+<h1>Flight Ticket booking form<br>   
+"Explore the world with a smile"</h1>
+
+
+<div class="booking-form-box">
+<div class="radio button">
+<input type="radio" class="button" name="check" checked="checked">
+<span>Roundtrip</span>
+
+<input type="radio" class="button" name="check" checked="checked">
+<span>One way trip</span>
+
+<input type="radio" class="button" name="check" checked="checked">
+<span>Multi-city</span>
+</div>
+
+<br>
+<div class="booking-form">
+<label>Flying From</label>
+<input type="text" Melbourne class="form-control" placeholder="City or Airport">
+<label>Flying To</label>
+<input type="text" class="form-control" placeholder="City or Airport">
+</div><br><br>
+
+
+<div class="input-grp">
+<label>DEPARTURE</label>
+<input type="date" class="form-control select-date">
+<div class="input grp">
+<label>RETURN DATE</label>
+<input type="date" class="form-control select-date">
+</div><br>
+
+<div class="input-grp">
+    <label> Travel class </label>
+    <select id="operation">
+    <option value="Premium Economy class">Premium Economy class</option>
+    <option value="Business class">Business class</option>
+    <option value="Economy class">Economy class</option>
+    </select>
+</div>
+
+<h2>PASSENGER DETAILS</h2>
+<label class="input-grp">
+Adults
+<input type="number" class="form-control" value="1"></label>
+
+<label class="input grp">
+Children
+<input type="number" class="form-control" value="0"></label>
+
+<h2>Passenger1 details</h2>
+
+<label class="f1">Full Name </label>
+<input type="text" pattern="[a-z A-Z]{5,}" title="minimum 5 letters are required"
+placeholder="Enter your full name" id="full-name">
+<span id="name-error"></span>
+
+<div class="radio button">
+    
+    <input type="radio" name="Male">Male
+    <input type="radio" name="Male"> Female
+</div><br>
+
+<div class="input grp">
+<label>Age</label>
+<input type="text"id="Age">
+</div>
+<h2>Passenger 2 details</h2>
+<div class="input grp">
+<label>Name </label>
+<input type="text" pattern="[a-z A-Z]{5,}" title="minimum 5 letters are required"
+id="form-control">
+<span id="name-error"></span>
+</div>
+<div class="radio button">
+    
+    <input type="radio" name="Male">Male
+    <input type="radio" name="Male"> Female</div><br><br>
+<div class="input grp">
+<label>Choice of food</label>
+<select id="operation">
+    <option value="Non veg Menu">Non veg Menu</option>
+    <option value="Veg Menu">Veg Menu</option>
+    </select>
+</div>
+    <h2>Payment Details</h2>
+    
+    <label>Name</label>
+    <input type="text" pattern="[a-z A-Z]{5,}" title="minimum 5 letters are required"
+    id="control1">
+    
+<label>Email </label>
+<input type="email" id="email123">
+
+
+<label>Mobilenumber</label>
+<input type="text" id="mnumber" placeholder="Mobile no. is required">
+
+<br><br>
+<input type="submit" id="submit" value="submit">
+
+</form>
+<script src="script.js" type="text/javascript"></script>
+</body>
+</html>
